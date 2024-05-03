@@ -1,0 +1,65 @@
+/* Style Guide Line 
+Fonts:
+Font Awesome 5 Brands	
+Font Awesome 5 Free = < stars, 
+Lato	Black = h1; sections-titles, nav-link, buttons,
+Lato	ExtraBold =  categoryCardsTitles, footerTitles,	
+Lato	SemiBold = names-reviews, 
+Nunito	Regular	= h2,  	
+Rubik	SemiBold = title-cards,info-titles (reds),
+Rubik	Regular = p, 
+
+Colour Styles:
+Dark: #2B3633;
+Dark Light: #777777;
+Gray: #E0E0E0;
+Light: #FFFFFF;
+Primary: #FF7360;
+Secondary: #677F79;
+Tertiary: #D2D16B;
+Bg Soft: #F1EFE9;
+Bg Dark: #EDE8D9;
+Border Soft: #BDCDC9;
+Overlay Linier: 0% #2B3633 100% #2B3633;
+Overlay Linier Banner: #19211F #100% #19211F 20%;
+Overlay Opcaity 1: #2B3633 60%;
+Overlay Opcaity 2 #2B3633 40%; */
+
+/*<uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900*/
+
+.rubik-<uniquifier> {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/*<uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 200 to 1000*/
+
+.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+ .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
