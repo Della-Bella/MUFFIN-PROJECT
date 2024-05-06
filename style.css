@@ -2,10 +2,10 @@
 Fonts:
 Font Awesome 5 Brands	
 Font Awesome 5 Free =  stars, 
-Lato	Black = h1; sections-titles, nav-link, buttons,
+Lato	Black = h1, text-top-section, nav-link, buttons,
 Lato	ExtraBold =  categoryCardsTitles, footerTitles,	
 Lato	SemiBold = names-reviews, 
-Nunito	Regular	= h2,  	
+Nunito	Regular	= h2, container-text, card-tilte	
 Rubik	SemiBold = title-cards,info-titles (reds),
 Rubik	Regular = p, 
 
@@ -87,15 +87,19 @@ body, html {
 
   #hero {
     background-image: linear-gradient(rgba(41, 40, 45, 0.409) 20%, rgba(120, 120, 122, 0.355) 54%, rgba(135, 97, 36, 0.617) 100%), url(assets/header_1.png);
-    height: 100vh; /* Make the header height equal to the viewport height */
     color: white; 
     display: flex; 
     background-position: center;
     background-size: cover;
     align-items: center; 
     text-align: center; 
-    background-size: cover;
+    background-size:cover;
 }
+/* Reduce height on mobile devices */
+@media (max-width: 767px) 
+  #hero {
+      height: 50vh; /* Adjust the height for mobile devices */
+  }
 
   .text-top-section{
     color: #FF7360;
@@ -125,3 +129,45 @@ body, html {
   .bt-header-about {
    background-color:  #D2D16B;
   }
+
+  .text-top-section{
+  font-family: "Lato", sans-serif;
+  font-weight: 480;
+  font-style: normal;
+
+  }
+
+
+  .section-text{
+    font-family: "Lato", sans-serif;
+    font-weight: 480;
+    font-style: normal;
+  }
+
+  .section-description{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  .card-title{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+  }
+  .card-text{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .container-footer{
+ background-color: #D2D16B;
+    }
+
+    
+  
