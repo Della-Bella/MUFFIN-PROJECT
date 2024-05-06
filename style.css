@@ -1,7 +1,7 @@
 /* Style Guide Line 
 Fonts:
 Font Awesome 5 Brands	
-Font Awesome 5 Free = < stars, 
+Font Awesome 5 Free =  stars, 
 Lato	Black = h1; sections-titles, nav-link, buttons,
 Lato	ExtraBold =  categoryCardsTitles, footerTitles,	
 Lato	SemiBold = names-reviews, 
@@ -22,21 +22,39 @@ Bg Dark: #EDE8D9;
 Border Soft: #BDCDC9;
 Overlay Linier: 0% #2B3633 100% #2B3633;
 Overlay Linier Banner: #19211F #100% #19211F 20%;
-Overlay Opcaity 1: #2B3633 60%;
-Overlay Opcaity 2 #2B3633 40%; */
+Overlay Opacity 1: #2B3633 60%;
+Overlay Opacity 2 #2B3633 40%; */
 
-/*<uniquifier>: Use a unique and descriptive class name
+/*<unifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 300 to 900*/
 
-.rubik-<uniquifier> {
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
+/*<unifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 200 to 1000
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
-/*<uniquifier>: Use a unique and descriptive class name
- <weight>: Use a value from 200 to 1000*/
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 200 to 1000
 
 .nunito-<uniquifier> {
   font-family: "Nunito", sans-serif;
@@ -44,22 +62,66 @@ Overlay Opcaity 2 #2B3633 40%; */
   font-weight: <weight>;
   font-style: normal;
 }
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 300 to 900
 
- .lato-regular {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
+.rubik-<uniquifier> {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+  /* Navigation Links */
+.nav-link {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  }
+
+   /* Header */
+
+  #hero {
+    background-image: linear-gradient(rgba(41, 40, 45, 0.409) 20%, rgba(120, 120, 122, 0.355) 54%, rgba(135, 97, 36, 0.617) 100%), url(assets/header_1.png);
+    height: 100vh; /* Make the header height equal to the viewport height */
+    color: white; 
+    display: flex; 
+    background-position: center;
+    background-size: cover;
+    align-items: center; 
+    text-align: center; 
+    background-size: cover;
+}
+
+  .text-top-section{
+    color: #FF7360;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
   }
-  
-  .lato-bold {
+  h1{
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
-  .lato-black {
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
+}
+  .hero-info{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
+
   }
-  
+
+  .bt-header-shop{
+    background-color:  #D2D16B;
+
+  }
+
+  .bt-header-about {
+   background-color:  #D2D16B;
+  }
