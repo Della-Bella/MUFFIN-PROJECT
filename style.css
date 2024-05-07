@@ -2,12 +2,12 @@
 Fonts:
 Font Awesome 5 Brands	
 Font Awesome 5 Free =  stars, 
-Lato	Black = h1, text-top-section, nav-link, buttons,
-Lato	ExtraBold =  categoryCardsTitles, footerTitles,	
+Lato	Black = h1,section-title, nav-link, buttons,
+Lato	ExtraBold = footerTitles,	
 Lato	SemiBold = names-reviews, 
-Nunito	Regular	= h2, container-text, card-tilte	
-Rubik	SemiBold = title-cards,info-titles (reds),
-Rubik	Regular = p, 
+Nunito	Regular	= h2,hero-description,section-description, card-tilte	
+Rubik	SemiBold = card-title, text-top-section,
+Rubik	Regular = p, card-description, 
 
 Colour Styles:
 Dark: #2B3633;
@@ -92,25 +92,20 @@ body, html {
     background-position: center;
     background-size: cover;
     align-items: center; 
-    text-align: center; 
+    text-align: start; 
     background-size:cover;
 }
+
+/* HERO */
 /* Reduce height on mobile devices */
 @media (max-width: 767px) 
   #hero {
       height: 50vh; /* Adjust the height for mobile devices */
   }
 
-  .text-top-section{
-    color: #FF7360;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-  }
   h1{
     font-family: "Lato", sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     font-style: normal;
 }
   .hero-info{
@@ -120,54 +115,64 @@ body, html {
     font-style: normal;
 
   }
-
-  .bt-header-shop{
-    background-color:  #D2D16B;
-
-  }
-
-  .bt-header-about {
-   background-color:  #D2D16B;
-  }
-
-  .text-top-section{
-  font-family: "Lato", sans-serif;
-  font-weight: 480;
-  font-style: normal;
-
-  }
-
-
-  .section-text{
-    font-family: "Lato", sans-serif;
-    font-weight: 480;
-    font-style: normal;
-  }
-
-  .section-description{
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-  }
-
-  .card-title{
+  .hero-description{
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400;
+    font-style: normal;
+    }
+/* SECTIONS */
+    .text-top-section{
+      color: #FF7360;
+      font-family: "Rubik", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      }
+
+  .section-title{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.section-description{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* CARDS */
+  .card-title{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;
 
   }
-  .card-text{
+  .card-description{
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 150;
     font-style: normal;
   }
+
+  /* FOOTER */
 
   .container-footer{
  background-color: #D2D16B;
     }
+
+  .footer-titles{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+   text-align: center;
+   
+  }
+  .footer-description{
+    padding-bottom: 20px;
+  }
 
     
   
