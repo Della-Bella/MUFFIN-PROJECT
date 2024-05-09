@@ -72,80 +72,24 @@ Overlay Opacity 2 #2B3633 40%; */
   font-style: normal;
 }*/
 
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', Arial, sans-serif;
-}
-  /* Navigation Links */
-.nav-link {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  }
-
-  /* Alex's nav links CSS - removes bullet points from UL when in Nav bar, allows SVG images to be used as links without changing the colour forcibly to blue */
-  nav {
-    padding-bottom: 50px;
-    a {
-      all: unset;
-    }
-    a:link {
-      all: unset;
-    }
-    a:hover {
-      all: unset;
-    }
-    a:visited {
-      all: unset;
-    }
-    a:active {
-      all: unset;
-    }
-    ul {
-      font-size: 16pt;
-      font-weight: 500;
-      list-style-type: none;
-      margin: 0px 0px 0px 0px;
-      padding: 0;
-      overflow: hidden;
-      background-color: #137932;
-      color: #ffffff;
-      li {
-        float: left;
-        padding: 10px 15px;
-        }
-      li:hover {
-        background-color: #ffffff;
-        color: #303030;
-        }
-      li.social {
-        float: right;
-        }
-      }
-    svg:hover {
-     color: #303030;
-    }
-  }
-
-   /* Header */
-
-  #hero {
-    background-image: linear-gradient(rgba(41, 40, 45, 0.409) 20%, rgba(120, 120, 122, 0.355) 54%, rgba(135, 97, 36, 0.617) 100%), url(assets/header_1.png);
-    color: white; 
-    display: flex; 
-    background-position: center;
-    background-size: cover;
-    align-items: center; 
-    text-align: start; 
-    background-size:cover;
+/* old CSS from Gis */
+/* hero? */
+#hero {
+  background-image: linear-gradient(rgba(41, 40, 45, 0.409) 20%, rgba(120, 120, 122, 0.355) 54%, rgba(135, 97, 36, 0.617) 100%), url(assets/header_1.png);
+  color: white; 
+  display: flex; 
+  background-position: center;
+  background-size: cover;
+  align-items: center; 
+  text-align: start; 
+  background-size:cover;
 }
 
-/* HERO */
-/* Reduce height on mobile devices */
+/* HERO
+Reduce height on mobile devices
 @media (max-width: 767px) 
   #hero {
-      height: 50vh; /* Adjust the height for mobile devices */
+      height: 50vh; (Adjust the height for mobile devices)
   }
 
   h1{
@@ -166,7 +110,7 @@ body, html {
     font-weight: 400;
     font-style: normal;
     }
-/* SECTIONS */
+SECTIONS
     .text-top-section{
       color: #FF7360;
       font-family: "Rubik", sans-serif;
@@ -187,7 +131,7 @@ body, html {
   font-style: normal;
 }
 
-/* CARDS */
+CARDS
   .card-title{
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
@@ -202,7 +146,7 @@ body, html {
     font-style: normal;
   }
 
-  /* FOOTER */
+   FOOTER 
 
   .container-footer{
  background-color: #D2D16B;
@@ -218,6 +162,113 @@ body, html {
   .footer-description{
     padding-bottom: 20px;
   }
+*/
+
+/* Responsive Screen Size */
+/* desktop size */
+@media only screen and (max-width: 990px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+/* tablet */
+@media only screen and (max-width: 768px) {
+  .responsive {
+    width: 100%;
+  }
+}
+/* phone version */
+@media only screen and (max-width: 320px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+/* body CSS */
+body {
+  background-color: #ffffff; 
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Alex's nav links CSS - removes bullet points from UL when in Nav bar, allows SVG images to be used as links without changing the colour forcibly to blue */
+nav {
+  padding-bottom: 50px;
+  a {
+    all: unset;
+  }
+  a:link {
+    all: unset;
+  }
+  a:hover {
+    all: unset;
+  }
+  a:visited {
+    all: unset;
+  }
+  a:active {
+    all: unset;
+  }
+  ul {
+    font-size: 16pt;
+    font-weight: 500;
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #137932;
+    color: #ffffff;
+    li {
+      float: left;
+      padding: 10px 15px;
+      }
+    li:hover {
+      background-color: #ffffff;
+      color: #303030;
+      }
+    li.social {
+      float: right;
+      }
+    }
+  svg:hover {
+   color: #303030;
+  }
+}
+
+footer {
+margin-bottom: 25px;
+}
+
+/* Standard formatting */ 
+/* Text CSS */
+h1 {
+  font-size: 24pt;
+  color: #137932;
+  font-weight: 700;
+}
+h2 {
+  font-size: 20pt;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  h2.accordion-header {
+    margin-top: 0px;
+  }
+}
+h3 {
+  font-size: 16pt;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 12pt;
+  font-weight: 400;
+}
+ul {
+margin-top: 15px;
+margin-bottom: 15px;
+}
 
   /* Forms CSS - DO NOT TOUCH UNDER PENALTY OF DEATH */
 form {
