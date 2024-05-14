@@ -157,6 +157,258 @@ body, html {
     font-style: normal;
   }
 
+  /*SINGLE PRODUCT PAGE*/
+
+  #pageBackground {
+    background-color:  white;
+  }
+  #pageContent {
+    display: block;
+    width:100%;
+    max-width:900px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+  }
+
+  #productImage, #productMain {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  #productText {
+    display: inline-block;
+    overflow-wrap: break-word;
+    max-width:200px;
+  }
+
+/*offer price -single product page*/
+.priceContainer {
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  padding: 10px;
+}
+
+.regularPrice {
+  text-decoration: line-through;
+  margin-right: 10px; 
+}
+
+.offerPrice {
+ margin-left: 10px; 
+ font-size: 25px;
+ font-weight: bold;
+ color: orangered;
+}
+
+  /*stars rating light up and removing the caret single product page*/
+  .checked, .star:hover {
+  color: rgb(241, 177, 16);
+}
+  .star {
+    cursor: default;
+    user-select: none;
+}
+
+/*quantity field single product page*/
+
+#quantityRow {
+  display: flex; /* Align children in a row */
+  align-items: center; /* Vertically align children in the middle */
+  gap: 10px; /* Optional: add some space between the label and the field */
+}
+
+.quantityField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px; 
+  height: 40px;
+  margin: 0 auto;    
+}
+
+.quantityField .valueButton{ 
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 100%;   
+  padding: 0;
+  background: #eee; 
+  outline: none;
+  cursor: pointer;
+}
+
+.quantityField .valueButton:hover {
+  background: rgb(230, 230, 230);
+}
+
+.quantityField .valueButton:active{
+  background: rgb(210, 210, 210);
+}
+
+.quantityField .decreaseButton {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+.quantityField .increaseButton {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+ 
+.quantityField .number{
+  display: inline-block;
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 100%;
+  line-height: 40px;
+  font-size: 11pt;
+  box-sizing: border-box; 
+  background: white;
+  font-family: lato;
+}
+
+.quantityField .number::selection{
+  background: none;
+}
+
+
+  
+#addToCart{
+  background-color: rgb(194, 242, 123);
+  width: 100%;
+  font-family: lato;
+  font-size: 15px;
+  margin-top: 10px;
+}
+/* Style the tab single product page */
+.tab {
+  overflow: hidden;
+ 
+  /*background-color: #f1f1f1;*/
+}
+
+#tabs {
+  margin-bottom: 50px;
+}
+
+/* Style the buttons that are used to open the tab content -single product page*/
+.tab button {
+  float: left;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover -single product page*/
+.tab button:hover {
+}
+
+/* Create an active/current tablink class -single product page*/
+.tab button.active {
+  outline: none;
+  color: orangered;
+  border-bottom: 2px solid orangered;
+}
+
+/* Style the tab content -single product page*/
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /*border: 1px solid #ccc;*/
+  border-top: none;
+  text-align: left;
+}
+
+.tablinks {
+  background-color: white;
+}
+
+/*Show Description by default*/
+#Description {
+display: block;
+}
+
+
+/*carousel -single product page*/
+.carouselButton {
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: none;
+  transition: all .3s ease-in-out;
+}
+
+.carouselContainer {
+height: 25vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+flex-direction: row;
+}
+
+.carouselContainer > * { /* Target all direct children of.carouselContainer */
+  flex-grow: 0; /* Prevent them from growing */
+  min-width: 0; /* Prevent them from shrinking beyond their content */
+}
+
+.carouselView {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+padding: 44px 0;
+transition: all 0.25s ease-in;
+}
+
+.carouselView .carouselItemList {
+max-width: 950px;
+width: 70vw;
+padding: 50px 10px;
+display: flex;
+gap: 48px;
+scroll-behavior: smooth;
+transition: all 0.25s ease-in;
+-ms-overflow-style: none; /* IE and Edge */
+scrollbar-width: none; /* Firefox */
+overflow: auto;
+scroll-snap-type: x mandatory;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carouselItemList::-webkit-scrollbar {
+display: none;
+}
+
+.prevButton {
+background: none;
+cursor: pointer;
+}
+
+.nextButton {
+cursor: pointer;
+}
+
+.carouselItem {
+scroll-snap-align: center;
+min-width: 120px;
+height: 120px;
+background-color: deeppink;
+border-radius:8px;
+}
+
   /* FOOTER */
 
   .container-footer{
@@ -171,7 +423,7 @@ body, html {
    
   }
   .footer-description{
-    padding-bottom: 20px;
+   /* padding-bottom: 20px;*/
   }
 
     
