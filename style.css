@@ -143,7 +143,7 @@ body, html {
 }
 
 /* Reviews*/
-.review-title{
+.review-title {
   color: #3c3c3c;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
@@ -151,12 +151,28 @@ body, html {
   font-style: normal;
 }
 
-   .container-review {
-    background-color: rgb(220, 220, 221);
-    padding-top: 20px;
+.container-review {
+  background-color: #EDE8D9;
+  padding: 10px;
+  margin: 50px;
+  height: 400px;
+}
 
+.review {
+  max-height: 300px; /* Set a maximum height for the review div */
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  padding-top: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
-    }
+.author {
+  margin-top: 30px;
+}
 
 
 /* CARDS */
