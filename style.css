@@ -358,9 +358,9 @@ background-color: white;
 flex-direction: row;
 }
 
-.carouselContainer > * { /* Target all direct children of.carouselContainer */
-  flex-grow: 0; /* Prevent them from growing */
-  min-width: 0; /* Prevent them from shrinking beyond their content */
+.carouselContainer > * { 
+  flex-grow: 0; 
+  min-width: 0; 
 }
 
 .carouselView {
