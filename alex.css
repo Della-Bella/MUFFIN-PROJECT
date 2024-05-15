@@ -1,0 +1,166 @@
+
+/* body CSS */
+body {
+    background-color: #ffffff; 
+    font-family: 'Montserrat', Arial, sans-serif;
+  }
+  
+  /* Alex's nav links CSS - removes bullet points from UL when in Nav bar, allows SVG images to be used as links without changing the colour forcibly to blue */
+  nav {
+    padding-bottom: 50px;
+    a {
+      all: unset;
+    }
+    a:link {
+      all: unset;
+    }
+    a:hover {
+      all: unset;
+    }
+    a:visited {
+      all: unset;
+    }
+    a:active {
+      all: unset;
+    }
+    ul {
+      font-size: 16pt;
+      font-weight: 500;
+      list-style-type: none;
+      margin: 0px 0px 0px 0px;
+      padding: 0;
+      overflow: hidden;
+      background-color: #137932; 
+      color: #ffffff;
+      li {
+        float: left;
+        padding: 10px 15px;
+        }
+      li:hover {
+        background-color: #ffffff;
+        color: #303030;
+        }
+      li.social {
+        float: right;
+        }
+      }
+    svg:hover {
+     color: #303030;
+    }
+  }
+  
+  footer {
+  margin-bottom: 25px;
+  }
+  
+  /* Standard formatting */ 
+  /* Text CSS */
+  h1 {
+    font-size: 24pt;
+    color: #137932;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 20pt;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    h2.accordion-header {
+      margin-top: 0px;
+    }
+  }
+  h3 {
+    font-size: 16pt;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 12pt;
+    font-weight: 400;
+  }
+  ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  }
+  
+    /* Forms CSS - DO NOT TOUCH UNDER PENALTY OF DEATH */
+  form {
+    padding: 15px;
+      input, textarea {
+          width: 100%;
+          padding: 10px 10px;
+          margin: 5px 0px 20px 0px;
+          box-sizing: border-box;
+      }
+      label {
+          width: 100%;
+          margin: 0px 0px 0px 0px;
+          padding: 0px 0px 0% 0px;
+          font-weight: 600;
+          font-size: 14;
+      }
+      .gdprCheckbox {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0px;
+        display: flex;
+        justify-content: flex-start;
+        input[type="checkbox"] {
+          width: 10%;
+          height: 100%;
+        }
+        label {
+          width: 90%;
+        }
+      }
+      .centerButton {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      input[type="submit"] {
+          width: 50%;
+          font-weight: 600;
+          border: solid;
+          border-width: 1px;
+          border-color: #303030;
+          border-radius: 5px;
+          margin-right: 10px;
+      }
+      input[type="submit"]:hover {
+        border: solid;
+        border-width: 1px;
+        border-color: #303030;
+        border-radius: 5px;
+        background-color: lightgreen;
+        display: flex;
+      }
+      
+      input[type="reset"] {
+        width: 50%;
+        font-weight: 600;
+        border: solid;
+        border-width: 1px;
+        border-color: #303030;
+        border-radius: 5px;
+        display: flex;
+        margin-left: 10px;
+      }
+      input[type="reset"]:hover {
+        border: solid;
+        border-width: 1px;
+        border-color: #303030;
+        border-radius: 5px;
+        background-color: pink;
+      }
+  }
+  
+  /* Accordion CSS */
+  .accordion-flush {
+    margin-right: 30px;
+  }
+    
+  
+  

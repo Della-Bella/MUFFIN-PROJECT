@@ -71,7 +71,6 @@ Overlay Opacity 2 #2B3633 40%; */
   font-weight: <weight>;
   font-style: normal;
 }*/
-
 body, html {
   margin: 0;
   padding: 0;
@@ -82,18 +81,17 @@ body, html {
   font-weight: 900;
   font-style: normal;
   }
-
-   /* Header */
-
-  #hero {
-    background-image: linear-gradient(rgba(41, 40, 45, 0.409) 20%, rgba(120, 120, 122, 0.355) 54%, rgba(135, 97, 36, 0.617) 100%), url(assets/header_1.png);
-    color: white; 
-    display: flex; 
-    background-position: center;
-    background-size: cover;
-    align-items: center; 
-    text-align: start; 
-    background-size:cover;
+/* old CSS from Gis */
+/* hero? */
+#hero {
+  background-image: linear-gradient(rgba(41, 40, 45, 0.409) 20%, rgba(120, 120, 122, 0.355) 54%, rgba(135, 97, 36, 0.617) 100%), url(assets/header_1.png);
+  color: white; 
+  display: flex; 
+  background-position: center;
+  background-size: cover;
+  align-items: center; 
+  text-align: start; 
+  background-size:cover;
 }
 
 /* HERO */
@@ -217,9 +215,9 @@ body, html {
 /*quantity field single product page*/
 
 #quantityRow {
-  display: flex; /* Align children in a row */
-  align-items: center; /* Vertically align children in the middle */
-  gap: 10px; /* Optional: add some space between the label and the field */
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
 }
 
 .quantityField {
@@ -405,7 +403,6 @@ cursor: pointer;
 scroll-snap-align: center;
 min-width: 120px;
 height: 120px;
-background-color: deeppink;
 border-radius:8px;
 }
 
@@ -426,5 +423,25 @@ border-radius:8px;
    /* padding-bottom: 20px;*/
   }
 
-    
   
+
+/* Responsive Screen Size */
+/* desktop size */
+@media only screen and (max-width: 990px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+/* tablet */
+@media only screen and (max-width: 768px) {
+  .responsive {
+    width: 100%;
+  }
+}
+/* phone version */
+@media only screen and (max-width: 320px) {
+    .responsive {
+      width: 100%;
+    }
+  }
