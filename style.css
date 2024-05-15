@@ -142,6 +142,23 @@ body, html {
   font-style: normal;
 }
 
+/* Reviews*/
+.review-title{
+  color: #3c3c3c;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+   .container-review {
+    background-color: rgb(220, 220, 221);
+    padding-top: 20px;
+
+
+    }
+
+
 /* CARDS */
   .card-title{
     font-family: "Rubik", sans-serif;
@@ -162,6 +179,10 @@ body, html {
   .container-footer{
  background-color: #D2D16B;
     }
+
+   .footer-address{
+        list-style: none;
+   }
 
   .footer-titles{
     font-family: "Lato", sans-serif;
