@@ -71,16 +71,7 @@ Overlay Opacity 2 #2B3633 40%; */
   font-weight: <weight>;
   font-style: normal;
 }*/
-body, html {
-  margin: 0;
-  padding: 0;
-}
-  /* Navigation Links */
-.nav-link {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  }
+
 /* old CSS from Gis */
 /* hero? */
 #hero {
@@ -94,12 +85,11 @@ body, html {
   background-size:cover;
 }
 
-/* HERO */
-/* Reduce height on mobile devices */
-
+/* HERO 
+Reduce height on mobile devices */
 @media (max-width: 767px) 
   #hero {
-      height: 50vh; /* Adjust the height for mobile devices */
+      height: 50vh; (Adjust the height for mobile devices)
   }
 
   h1{
@@ -142,40 +132,6 @@ body, html {
   font-style: normal;
 }
 
-/* Reviews*/
-.review-title {
-  color: #3c3c3c;
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.container-review {
-  background-color: #EDE8D9;
-  padding: 10px;
-  margin: 50px;
-  height: 400px;
-}
-
-.review {
-  max-height: 300px; /* Set a maximum height for the review div */
-  background-color: rgb(255, 255, 255);
-  align-items: center;
-  padding-top: 20px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.author {
-  margin-top: 30px;
-}
-
-
-
 /* CARDS */
   .card-title{
     font-family: "Rubik", sans-serif;
@@ -191,281 +147,21 @@ body, html {
     font-style: normal;
   }
 
-
-  /*SINGLE PRODUCT PAGE*/
-
-  #pageBackground {
-    background-color:  white;
-  }
-  #pageContent {
-    display: block;
-    width:100%;
-    max-width:900px;
-    margin: 0 auto;
-    background-color: white;
-    text-align: center;
-  }
-
-  #productImage, #productMain {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin-top: 50px;
-    margin-bottom: 25px;
-  }
-
-  #productText {
-    display: inline-block;
-    overflow-wrap: break-word;
-    max-width:200px;
-  }
-
-/*offer price -single product page*/
-.priceContainer {
-  display: flex;
-  justify-content:start;
-  align-items: center;
-  padding: 10px;
-}
-
-.regularPrice {
-  text-decoration: line-through;
-  margin-right: 10px; 
-}
-
-.offerPrice {
- margin-left: 10px; 
- font-size: 25px;
- font-weight: bold;
- color: orangered;
-}
-
-  /*stars rating light up and removing the caret single product page*/
-  .checked, .star:hover {
-  color: rgb(241, 177, 16);
-}
-  .star {
-    cursor: default;
-    user-select: none;
-}
-
-/*quantity field single product page*/
-
-#quantityRow {
-  display: flex; 
-  align-items: center; 
-  gap: 10px; 
-}
-
-.quantityField {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px; 
-  height: 40px;
-  margin: 0 auto;    
-}
-
-.quantityField .valueButton{ 
-  border: 1px solid #ddd;
-  margin: 0px;
-  width: 40px;
-  height: 100%;   
-  padding: 0;
-  background: #eee; 
-  outline: none;
-  cursor: pointer;
-}
-
-.quantityField .valueButton:hover {
-  background: rgb(230, 230, 230);
-}
-
-.quantityField .valueButton:active{
-  background: rgb(210, 210, 210);
-}
-
-.quantityField .decreaseButton {
-  margin-right: -4px;
-  border-radius: 8px 0 0 8px;
-}
-
-.quantityField .increaseButton {
-  margin-left: -4px;
-  border-radius: 0 8px 8px 0;
-}
- 
-.quantityField .number{
-  display: inline-block;
-  text-align: center;
-  border: none;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin: 0px;
-  width: 40px;
-  height: 100%;
-  line-height: 40px;
-  font-size: 11pt;
-  box-sizing: border-box; 
-  background: white;
-  font-family: lato;
-}
-
-.quantityField .number::selection{
-  background: none;
-}
-
-
-  
-#addToCart{
-  background-color: rgb(194, 242, 123);
-  width: 100%;
-  font-family: lato;
-  font-size: 15px;
-  margin-top: 10px;
-}
-/* Style the tab single product page */
-.tab {
-  overflow: hidden;
- 
-  /*background-color: #f1f1f1;*/
-}
-
-#tabs {
-  margin-bottom: 50px;
-}
-
-/* Style the buttons that are used to open the tab content -single product page*/
-.tab button {
-  float: left;
-  border:none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-/* Change background color of buttons on hover -single product page*/
-.tab button:hover {
-}
-
-/* Create an active/current tablink class -single product page*/
-.tab button.active {
-  outline: none;
-  color: orangered;
-  border-bottom: 2px solid orangered;
-}
-
-/* Style the tab content -single product page*/
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  /*border: 1px solid #ccc;*/
-  border-top: none;
-  text-align: left;
-}
-
-.tablinks {
-  background-color: white;
-}
-
-/*Show Description by default*/
-#Description {
-display: block;
-}
-
-
-/*carousel -single product page*/
-.carouselButton {
-  border: none;
-  cursor: pointer;
-  color: white;
-  background: none;
-  transition: all .3s ease-in-out;
-}
-
-.carouselContainer {
-height: 25vh;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: white;
-flex-direction: row;
-}
-
-.carouselContainer > * { 
-  flex-grow: 0; 
-  min-width: 0; 
-}
-
-.carouselView {
-display: flex;
-justify-content: space-between;
-align-items: center;
-gap: 10px;
-padding: 44px 0;
-transition: all 0.25s ease-in;
-}
-
-.carouselView .carouselItemList {
-max-width: 950px;
-width: 70vw;
-padding: 50px 10px;
-display: flex;
-gap: 48px;
-scroll-behavior: smooth;
-transition: all 0.25s ease-in;
--ms-overflow-style: none; /* IE and Edge */
-scrollbar-width: none; /* Firefox */
-overflow: auto;
-scroll-snap-type: x mandatory;
-}
-
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.carouselItemList::-webkit-scrollbar {
-display: none;
-}
-
-.prevButton {
-background: none;
-cursor: pointer;
-}
-
-.nextButton {
-cursor: pointer;
-}
-
-.carouselItem {
-scroll-snap-align: center;
-min-width: 120px;
-height: 120px;
-border-radius:8px;
-}
-
-  /* FOOTER */
+/* FOOTER */
 
   .container-footer{
  background-color: #D2D16B;
     }
-
-   .footer-address{
-        list-style: none;
-   }
 
   .footer-titles{
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: bold;
    text-align: center;
-   text-decoration: none;
-  }
-
-
+   }
   .footer-description{
-   /* padding-bottom: 20px;*/
+    padding-bottom: 20px;
   }
-
 
 /* Responsive Screen Size */
 /* desktop size */
@@ -488,6 +184,92 @@ border-radius:8px;
     }
   }
 
+/* body CSS */
+body {
+  background-color: #ffffff; 
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Alex's nav links CSS - removes bullet points from UL when in Nav bar, allows SVG images to be used as links without changing the colour forcibly to blue */
+nav {
+  padding-bottom: 50px;
+  a {
+    all: unset;
+  }
+  a:link {
+    all: unset;
+  }
+  a:hover {
+    all: unset;
+  }
+  a:visited {
+    all: unset;
+  }
+  a:active {
+    all: unset;
+  }
+  ul {
+    font-size: 16pt;
+    font-weight: 500;
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    overflow: hidden;
+    li {
+      float: left;
+      padding: 10px 15px;
+      }
+    li.social {
+      display: flex;
+      justify-content: flex-end;
+      float: right;
+      }
+      .social {
+        display: flex;
+        align-content: flex-end;
+        align-items: flex-end;
+        justify-content: flex-end;
+        float: right;
+        ul {
+          list-style-type: none;
+        }
+        }
+    }
+}
+
+footer {
+margin-bottom: 25px;
+}
+
+/* Standard formatting */ 
+/* Text CSS */
+h1 {
+  font-size: 24pt;
+  font-weight: 700;
+}
+h2 {
+  font-size: 20pt;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  h2.accordion-header {
+    margin-top: 0px;
+  }
+}
+h3 {
+  font-size: 16pt;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 12pt;
+  font-weight: 400;
+}
+ul {
+margin-top: 15px;
+margin-bottom: 15px;
+}
 
   /* Forms CSS - DO NOT TOUCH UNDER PENALTY OF DEATH */
 form {
@@ -566,3 +348,4 @@ form {
 .accordion-flush {
   margin-right: 30px;
 }
+  
