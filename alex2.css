@@ -1,0 +1,351 @@
+/* Style Guide Line 
+Fonts:
+Font Awesome 5 Brands	
+Font Awesome 5 Free =  stars, 
+Lato	Black = h1,section-title, nav-link, buttons,
+Lato	ExtraBold = footerTitles,	
+Lato	SemiBold = names-reviews, 
+Nunito	Regular	= h2,hero-description,section-description, card-tilte	
+Rubik	SemiBold = card-title, text-top-section,
+Rubik	Regular = p, card-description, 
+
+Colour Styles:
+Dark: #2B3633;
+Dark Light: #777777;
+Gray: #E0E0E0;
+Light: #FFFFFF;
+Primary: #FF7360;
+Secondary: #677F79;
+Tertiary: #D2D16B;
+Bg Soft: #F1EFE9;
+Bg Dark: #EDE8D9;
+Border Soft: #BDCDC9;
+Overlay Linier: 0% #2B3633 100% #2B3633;
+Overlay Linier Banner: #19211F #100% #19211F 20%;
+Overlay Opacity 1: #2B3633 60%;
+Overlay Opacity 2 #2B3633 40%; */
+
+/*<unifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900*/
+
+/*<unifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 200 to 1000 */
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 200 to 1000 */
+
+.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 300 to 900 */
+
+.rubik-<uniquifier> {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+/* old CSS from Gis */
+/* hero? */
+#hero {
+  background-image: linear-gradient(rgba(41, 40, 45, 0.409) 20%, rgba(120, 120, 122, 0.355) 54%, rgba(135, 97, 36, 0.617) 100%), url(assets/header_1.png);
+  color: white; 
+  display: flex; 
+  background-position: center;
+  background-size: cover;
+  align-items: center; 
+  text-align: start; 
+  background-size:cover;
+}
+
+/* HERO 
+Reduce height on mobile devices */
+@media (max-width: 767px) 
+  #hero {
+      height: 50vh; (Adjust the height for mobile devices)
+  }
+
+  h1{
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 30px;
+}
+  .hero-info{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+  }
+  .hero-description{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    }
+/* SECTIONS */
+    .text-top-section{
+      color: #FF7360;
+      font-family: "Rubik", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      }
+
+  .section-title{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.section-description{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* CARDS */
+  .card-title{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+  .card-description{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 150;
+    font-style: normal;
+  }
+
+/* FOOTER */
+
+  .container-footer{
+ background-color: #D2D16B;
+    }
+
+  .footer-titles{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+   text-align: center;
+   }
+  .footer-description{
+    padding-bottom: 20px;
+  }
+
+/* Responsive Screen Size */
+/* desktop size */
+@media only screen and (max-width: 990px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+/* tablet */
+@media only screen and (max-width: 768px) {
+  .responsive {
+    width: 100%;
+  }
+}
+/* phone version */
+@media only screen and (max-width: 320px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+/* body CSS */
+body {
+  background-color: #ffffff; 
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Alex's nav links CSS - removes bullet points from UL when in Nav bar, allows SVG images to be used as links without changing the colour forcibly to blue */
+nav {
+  padding-bottom: 50px;
+  a {
+    all: unset;
+  }
+  a:link {
+    all: unset;
+  }
+  a:hover {
+    all: unset;
+  }
+  a:visited {
+    all: unset;
+  }
+  a:active {
+    all: unset;
+  }
+  ul {
+    font-size: 16pt;
+    font-weight: 500;
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    overflow: hidden;
+    li {
+      float: left;
+      padding: 10px 15px;
+      }
+    li.social {
+      display: flex;
+      justify-content: flex-end;
+      float: right;
+      }
+      .social {
+        display: flex;
+        align-content: flex-end;
+        align-items: flex-end;
+        justify-content: flex-end;
+        float: right;
+        ul {
+          list-style-type: none;
+        }
+        }
+    }
+}
+
+footer {
+margin-bottom: 25px;
+}
+
+/* Standard formatting */ 
+/* Text CSS */
+h1 {
+  font-size: 24pt;
+  font-weight: 700;
+}
+h2 {
+  font-size: 20pt;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  h2.accordion-header {
+    margin-top: 0px;
+  }
+}
+h3 {
+  font-size: 16pt;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 12pt;
+  font-weight: 400;
+}
+ul {
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+  /* Forms CSS - DO NOT TOUCH UNDER PENALTY OF DEATH */
+form {
+  padding: 15px;
+    input, textarea {
+        width: 100%;
+        padding: 10px 10px;
+        margin: 5px 0px 20px 0px;
+        box-sizing: border-box;
+    }
+    label {
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0% 0px;
+        font-weight: 600;
+        font-size: 14;
+    }
+    .gdprCheckbox {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 0px;
+      display: flex;
+      justify-content: flex-start;
+      input[type="checkbox"] {
+        width: 10%;
+        height: 100%;
+      }
+      label {
+        width: 90%;
+      }
+    }
+    .centerButton {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    input[type="submit"] {
+        width: 50%;
+        font-weight: 600;
+        border: solid;
+        border-width: 1px;
+        border-color: #303030;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    input[type="submit"]:hover {
+      border: solid;
+      border-width: 1px;
+      border-color: #303030;
+      border-radius: 5px;
+      background-color: lightgreen;
+      display: flex;
+    }
+    
+    input[type="reset"] {
+      width: 50%;
+      font-weight: 600;
+      border: solid;
+      border-width: 1px;
+      border-color: #303030;
+      border-radius: 5px;
+      display: flex;
+      margin-left: 10px;
+    }
+    input[type="reset"]:hover {
+      border: solid;
+      border-width: 1px;
+      border-color: #303030;
+      border-radius: 5px;
+      background-color: pink;
+    }
+}
+
+/* Accordion CSS */
+.accordion-flush {
+  margin-right: 30px;
+}
+  
